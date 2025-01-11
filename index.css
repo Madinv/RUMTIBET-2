@@ -172,3 +172,97 @@
       display: none;
     }
   
+
+
+
+
+    .main{
+        margin: 50px 150px; 
+        display: flex; 
+        justify-content:center;
+        align-items: center;
+        min-width: 1180px;
+        min-height: 526px;
+        color:var(--second-color);
+        position: relative;
+        gap: 230px;
+       }
+       
+       .main-img-two{
+          padding: 0px;
+          border-radius: 24px;
+          min-height: 400px;
+          min-width: 350px;
+       }
+       .main-video{
+           position: absolute;
+           background-size: cover;
+           top: 20%;
+           left: 10%;
+           min-height: 400px;
+           min-width: 350px;
+           border-radius: 24px;
+           background-color: aliceblue;
+           object-fit: cover;
+       }
+       
+       .main-block-two
+       {
+           display: flex;
+           flex-direction: column;
+           justify-content: flex-start;
+        }
+
+       .main-links{
+           display: flex;
+           flex-direction: column;
+           font-family: "Nunito Sans", sans-serif;
+           list-style-type: none;
+           gap: 10px;
+           /* min-height: 398px; */
+           min-width: 580px;
+           /* margin: 100px 0px; */
+          
+       
+       }
+       .main-text-1{
+           color:  #F2BE22;
+           font-size: 24px;
+          
+       }
+       .main-text-2{
+           color: #18121E;
+           font-size: 32px;
+           font-weight: 800;
+           line-height: 38.4px;
+       
+       }
+       .main-text-3{
+           color: #18121E;
+           font-size: 18px;
+           font-weight: 400;
+           line-height: 27px;
+       }
+       /* .about-our4{
+           color: #18121E;
+           font-size: 14px;
+           font-weight: 400;
+           line-height: 20px;
+           text-indent: 0px;
+           padding-right: 0px;
+           margin: 0px;
+           list-style-type: none;
+       } */
+       .main-button{
+           color:var(--primary-color);
+           background-color: #1A3E3E;
+           max-width: 200px;
+           max-height: 52px;
+           padding: 10px;
+           border-radius: 5px; 
+           font-size: 16px;
+           line-height: 20px;
+           font-weight: 600;
+           margin-top: 20px;
+       }
+       

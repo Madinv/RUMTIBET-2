@@ -1,0 +1,174 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  @font-face {
+      font-family: "NEXT-ART";
+      src: url(../fonts/ART_SemiBold.otf);
+  }
+  
+  :root{
+      --primary-color:#FDFDFD;
+      --second-color: #171717;
+  }
+  
+  ::placeholder {
+      color: var(--primary-color)
+    }
+  
+    :hover{
+      cursor: pointer;
+      /* text-decoration: underline; */
+  }
+  input:focus {
+      color: white;
+    }
+  
+  .body{
+      box-sizing: border-box;
+      font-family: "Nunito Sans", sans-serif;
+  }
+  
+  .header {
+      background-image: url(image/1.jpeg);
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      gap: 200px;
+      padding: 20px;
+  }
+    
+    .header-block {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Nunito Sans", sans-serif;
+      gap: 100px;
+    }
+    .header-block-two{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+  
+    .header-logo {
+      max-width: 137px;
+      max-height:72px; 
+    }
+
+    .header-logo-two {
+      display: none;
+      }
+    
+    ul {
+      list-style-type: none;
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+    }
+  
+    a {
+      text-decoration: none;
+      font-size: 18px;
+      color:var(--primary-color);
+      font-weight: 600;
+    }
+  .form-text{
+     font-size: 14px;
+     font-weight: 400;
+     line-height: 21px;
+     padding-left: 3px;
+     }
+  
+  .header-button{
+      font-size: 16px;
+      margin: 10px;
+      padding: 12px 24px;
+      color:var(--primary-color);
+      font-weight: 600;
+      background-color:#1A3E3E;
+      border-radius: 4px;
+  }
+  
+    .header-text{
+      font-family: "NEXT-ART";
+      font-weight: 700;
+      color:var(--primary-color);
+      font-size: 50px;
+      line-height: 75px;
+      letter-spacing: 2%;
+      padding-bottom: 20px;
+    }
+  
+    .wrapper-content-block2 {
+      max-width: 1160px;
+    }
+  
+    .register-form,
+    .main-input,
+    .register-button
+    {
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 700;
+      font-family: "Nunito Sans", sans-serif;
+      color:var(--primary-color);
+    }
+    .input-block {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      color:var(--primary-color);
+      margin: 10px;
+      position: relative;
+      gap: 5px;
+    }
+  
+    .main-input{
+      padding: 10px;
+      border-radius: 8px;
+      min-width: 270px;
+      background-color: #FFFFFF33;
+    }
+  
+    .register-form{
+      display: flex;
+      padding: 10px;
+      box-sizing: border-box;
+      gap: 10px;
+      flex-wrap: wrap;
+  }
+  
+  .register-button{
+      background-color:var(--primary-color);
+      color: #1A3E3E;
+      border-radius: 8px;
+      margin-top: 18px;
+      min-width: 213px;
+      max-height: 52px;
+  }
+  .header-form{
+      display: flex;
+      background-color: #FFFFFF33;
+      padding: 10px;
+      border-radius: 10px;
+      box-sizing: border-box;
+      max-width: 1250px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+  }
+  .register-form-img{
+     position: absolute;
+     top: 95%;
+     right: 71%;
+    }
+   
+    .register-button-media {
+      display: none;
+    }
+  

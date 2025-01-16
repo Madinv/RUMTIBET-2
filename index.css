@@ -631,9 +631,9 @@
         gap: 10px;
         /* margin: 5px; */
     }
-    .form-text{
+    /* .form-text{
         background-color: var(--primary-color);
-    }
+    } */
     
     .form-button{
         color:var(--primary-color);
@@ -658,7 +658,7 @@
         font-weight: 800;
         line-height: 31.2px;
     }
-    .form-text{
+    .form-text-two{
         color: #171717;
         font-size: 16px;
         line-height: 20px;

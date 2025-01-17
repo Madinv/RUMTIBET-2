@@ -2,53 +2,44 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-   <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="index.css">
    <link rel="stylesheet" href="media.css">
-   <link rel="stylesheet" href="reset.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 <title>RUMTIBET</title>
   </head>
   <body>
-    <div class="header">
+    <header>
       <div class="header-block">
-        <img
-          src="image/Group 19 2.png"
-          alt="Здесь логотип румтибет"
-          class="header-logo"
-        />
-        <img
-          src="image/img3.png"
-          alt="Здесь кнопка румтибет"
-          class="header-logo-two"
-        />
+        <img src="image/Group 19 2.png" alt="Логотип Rumtibet" width="100" height="50" class="header_logo"/>
+        <img src="image/img3.png" alt="Боковая панель Rumtibet" width="100" height="50" class="header__logo--secondary"/>
 
         <ul class="links">
-          <li><a href="google.com">Главная</a></li>
-          <li><a href="google.com">Про гида</a></li>
-          <li><a href="google.com">Программа тура</a></li>
-          <li><a href="google.com">Стоимость</a></li>
-          <li><a href="google.com">Блог</a></li>
-          <li><a href="google.com">Контакты</a></li>
+          <li><a href="google.com" title="Переход в меню сайта Rumtibet">Главная</a></li>
+          <li><a href="google.com" title="Переход в меню сайта Rumtibet">Про гида</a></li>
+          <li><a href="google.com" title="Переход в меню сайта Rumtibet">Программа тура</a></li>
+          <li><a href="google.com" title="Переход в меню сайта Rumtibet">Стоимость</a></li>
+          <li><a href="google.com" title="Переход в меню сайта Rumtibet">Блог</a></li>
+          <li><a href="google.com" title="Переход в меню сайта Rumtibet">Контакты</a></li>
         </ul>
         <button class="header-button">Консультация</button>
       </div>
 
-      <div class="header-block-two">
-        <div class="wrapper-content-block2">
+      <div class="header-block__form">
+        <div class="header_wrapper">
         <div class="header-text">
           Насладись прогулкой в горах с командой единомышленников
         </div>
-        <div class="header-form">
+        <form class="header-form">
           <div action="#" method="get" class="register-form">
-            <div class="input-block">
+            <div class="header-input__block">
               <input
                 type="text"
                 name="text"
-                class="main-input"
+                class="header-input"
                 required
                 placeholder="Локация для тура"
               />
@@ -61,11 +52,11 @@
               class="register-form-img"
             />
 
-            <div class="input-block">
+            <div class="header-input__block">
               <input
                 type="date"
                 name="date"
-                class="main-input"
+                class="header-input"
                 min="6"
                 max="20"
                 required
@@ -74,11 +65,11 @@
               <p class="form-text">укажите диапазон</p>
             </div>
 
-            <div class="input-block">
+            <div class="header-input__block">
               <input
                 type="number"
                 name="number"
-                class="main-input"
+                class="header-input"
                 min="4"
                 required
                 placeholder="Участники"
@@ -88,13 +79,14 @@
           </div>
 
           <button type="submit" class="register-button">Найти программу</button>
-        </div>
+          <button type="submit" class="register-button-media">Найти программу</button>
+        </form>
         <button type="submit" class="register-button-media">
           Найти программу
         </button>
       </div>
       </div>
-    </div>
+    </header>
 
 
     <div class="main-block">
@@ -103,11 +95,11 @@
           <img src="image/горы.png" alt="Здесь картинка гор"class="main-img-two">
           <video src="video/видео горы.mp4" width="350" height="400" class="main-video" controls>
             </div>
-           <div class="main-block-two">
+           <div class="main-block__secondary">
           <div class="main-links">
-            <h2 class="main-text-1">о нашем походе</h2>
-            <h1 class="main-text-2">Исследуйте все горные массивы мира вместе с нами</h1>
-            <h3 class="main-text-3">Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, "consectetur"и занялся его поисками в классической латинской литературе.</h3>
+            <h2 class="main__title">о нашем походе</h2>
+            <h1 class="main_text">Исследуйте все горные массивы мира вместе с нами</h1>
+            <h3 class="main_description">Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, "consectetur"и занялся его поисками в классической латинской литературе.</h3>
           </div>
             <button class="main-button">Программа тура</button>
     </div>
@@ -118,37 +110,37 @@
     <div class="content">
        <div class="content-wrap">
       <div class="content-links">
-        <h2 class="main-text-1">наше предложение</h2>
-        <h1 class="main-text-2">Лучшие программы для тебя</h1>
-        <h3 class="main-text-3">Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа.</h3>
-        <div class="main-block-img"><div class="main-svg"><img src="image/3.19.png" alt="Здесь иконка"></div>
-        <div><h3 class="main-text-4">Опытный гид</h3>
-        <h3 class="main-text-3">Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации.</h3>
+        <h2 class="content__title">наше предложение</h2>
+        <h1 class="content__text">Лучшие программы для тебя</h1>
+        <h3 class="content_description">Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа.</h3>
+        <div class="content-block__img"><div class="main-svg"><img src="image/3.19.png" alt="Иконка Rumtibet"></div>
+        <div><h3 class="content__text--secondary">Опытный гид</h3>
+        <h3 class="content_description">Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации.</h3>
        </div>
       </div>
-      <div class="main-block-img"><div class="main-svg"><img src="image/3.20.png" alt="Здесь иконка"></div>
-        <div><h3 class="main-text-4">Безопасный поход</h3>
-        <h3 class="main-text-3">Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации.</h3>
+      <div class="content-block__img"><div class="main-svg"><img src="image/3.20.png" alt="Иконка Rumtibet"></div>
+        <div><h3 class="content__text--secondary">Безопасный поход</h3>
+        <h3 class="content_description">Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации.</h3>
        </div>
       </div>
-      <div class="main-block-img"><div class="main-svg"><img src="image/3.21.png" alt="Здесь иконка"></div>
-      <div><h3 class="main-text-4">Лояльные цены</h3>
-      <h3 class="main-text-3">Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации.</h3>
+      <div class="content-block__img"><div class="main-svg"><img src="image/3.21.png" alt="Иконка Rumtibet"></div>
+      <div><h3 class="content__text--secondary">Лояльные цены</h3>
+      <h3 class="content_description">Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации.</h3>
      </div>
     </div>
     </div>
      
-        <button class="main-button-2">Стоимость программ</button>
+        <button class="content-button">Стоимость программ</button>
      
 </div>
 <div class="content-img">
-    <div class="img-block1">
-    <img src="image/3.1.png" alt="Здесь картинка гор"class="img3">
-    <img src="image/3.2.png" alt="Здесь картинка гор"class="img4">
+    <div class="content-wrapper__img">
+    <img src="image/3.1.png" alt="Картинка гор Rumtibet"class="img3">
+    <img src="image/3.2.png" alt="Картинка гор Rumtibet"class="img4">
 </div>
-<div class="img-block2">
-    <img src="image/3.3.png" alt="Здесь картинка гор"class="img5">
-    <img src="image/3.4.png" alt="Здесь картинка гор"class="img6">
+<div class="content-wrapper__img">
+    <img src="image/3.3.png" alt="Картинка гор Rumtibet"class="img5">
+    <img src="image/3.4.png" alt="Картинка гор Rumtibet"class="img6">
 </div>
       </div>
     </div>
@@ -156,99 +148,99 @@
 
 
 <div class="price-block">
-  <div class="images">
-     <div class="images-block">
-    <div class="images-links">
-      <h2 class="main-text-1">по версии отдыхающих</h2>
-        <h1 class="main-text-2">Популярные направления</h1>
-  </div>
+  <div class="price-wrapper">
+     <div class="price-images__block">
+    <section class="price-images__links">
+      <h2 class="price_title">по версии отдыхающих</h2>
+        <h1 class="price_text">Популярные направления</h1>
+  </section>
 </div>
-<div class="images-img">
+<div class="price-images-wrapper">
   <div class="bg-images">
   <img src="image/3.5.png" alt="Здесь картинка озера"class="img7">
-  <div class="bg-text">
-     <div> <h1 style="font-size:24px">Озеро возле гор</h1>
-      <p style="font-size:14px">романтическое приключение</p></div>
+  <section class="bg-text">
+     <div> <h1>Озеро возле гор</h1>
+      <p class="price-description">романтическое приключение</p></div>
       <p class="price">480 $</p>
-  </div>
+  </section>
 </div>
   <div class="bg-text2"><img src="image/3.8.png" alt="Здесь картинка звездочки"class="img10">
-  <p class="price2">4.9</p></div>
+  <p class="price-secondary">4.9</p></div>
 
   <div class="bg-images"><img src="image/3.6.png" alt="Здесь картинка озера"class="img8">
-  <div class="bg-text">
-      <div> <h1 style="font-size:24px">Ночь в горах</h1>
-       <p style="font-size:14px">в компании друзей</p></div>
+  <section class="bg-text">
+      <div> <h1>Ночь в горах</h1>
+       <p class="price-description">в компании друзей</p></div>
        <p class="price">500 $</p>
-   </div>
+   </section>
 </div>
 <div class="bg-text2"><img src="image/3.8.png" alt="Здесь картинка звездочки"class="img10">
-  <p class="price2">4.5</p></div>
+  <p class="price-secondary">4.5</p></div>
   <div class="bg-images">
     <img src="image/3.7.png" alt="Здесь картинка озера"class="img9">
-    <div class="bg-text">
-        <div> <h1 style="font-size:24px">Йога в горах</h1>
-         <p style="font-size:14px">для тех, кто заботится о себе</p></div>
+    <section class="bg-text">
+        <div> <h1>Йога в горах</h1>
+         <p class="price-description">для тех, кто заботится о себе</p></div>
          <p class="price">230 $</p>
-     </div>
+     </section>
  </div>
  <div class="bg-text2"><img src="image/3.8.png" alt="Здесь картинка звездочки"class="img10">
-    <p class="price2">5.0</p></div>
+    <p class="price-secondary">5.0</p></div>
       </div>
-      <button class="main-button-3">Рейтинг направлений</button>
+      <button class="price-button">Рейтинг направлений</button>
          </div>
            </div>
 
 
 
            <div class="travel-main">
-              <div class="travel-links">
-           <h2 class="main-text-1">делимся впечатлениями</h2>
-        <h1 class="main-text-2">Блог о путешествиях</h1>
-            </div>
+              <section class="travel-links">
+           <h2 class="travel__title">делимся впечатлениями</h2>
+        <h1 class="travel_text">Блог о путешествиях</h1>
+            </section>
             <div class="travel-sc">
               <div class="travel-container">
                 <div class="travel-block">
-                <img src="image/3.9.png" alt="Здесь картинка гор"class="img11">
-                <div class="travel-text">
+                <img src="image/3.9.png" alt="Картинка гор Rumtibet"class="img11">
+                <section class="travel-text">
                     <div> <h1 style="font-size:24px">Красивая Италия, какая она в реальности?</h1>
                      <p style="font-size:14px">Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации.</p></div>
-                     <div class="date"><p class="date1">01/04/2023</p>
-                     <p class="date2">читать статью</p></div>
-                 </div>
+                     <div class="travel-date"><p class="travel-date__wrapper">01/04/2023</p>
+                     <p class="travel-date__text">читать статью</p></div>
+                 </section>
                 </div>
 
                 <div class="travel-block">
-                  <img src="image/3.11.png" alt="Здесь картинка гор"class="img13">
-                  <div class="travel-text">
+                  <img src="image/3.11.png" alt="Картинка гор Rumtibet"class="img13">
+                  <section class="travel-text">
                       <div> <h1 style="font-size:24px">Долой сомнения!Весь мир открыт для вас?</h1>
                        <p style="font-size:14px">Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации.</p></div>
-                       <div class="date"><p class="date1">01/04/2023</p>
-                       <p class="date2">читать статью</p></div>
-                   </div>
+                       <div class="travel-date"><p class="travel-date__wrapper">01/04/2023</p>
+                       <p class="travel-date__text">читать статью</p></div>
+                   </section>
                   </div>
 </div>
 
 <div class="travel-container">
          <div class="travel-block">
-         <img src="image/3.10.png" alt="Здесь картинка гор"class="img14">
-            <div class="travel-text">
+         <img src="image/3.10.png" alt="Картинка гор Rumtibet"class="img14">
+            <section class="travel-text">
       <div> <h1 style="font-size:24px">Как подготовиться к путешествию в одиночку? </h1>
        <p style="font-size:14px">Для современного мира базовый вектор развития предполагает.</p></div>
-       <div class="date"><p class="date1">01/04/2023</p>
-       <p class="date2">читать статью</p></div>
-   </div>
+       <div class="travel-date"><p class="travel-date__wrapper">01/04/2023</p>
+       <p class="travel-date__text">читать статью</p></div>
+   </section>
   </div>
 
         
   <div class="travel-block">
-    <img src="image/3.12.png" alt="Здесь картинка гор"class="img14">
-       <div class="travel-text">
+    <img src="image/3.12.png" alt="Картинка гор Rumtibet"class="img14">
+       <section class="travel-text">
  <div> <h1 style="font-size:24px">Индия... летим?</h1>
   <p style="font-size:14px">Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации.</p></div>
-  <div class="date"><p class="date1">01/04/2023</p>
-  <p class="date2">читать статью</p></div>
-</div>
+  <div class="travel-date"><p class="travel-date__wrapper">01/04/2023</p>
+  <p class="travel-date__text">читать статью</p></div>
+</section>
 </div>
 </div> 
 </div>       
@@ -258,19 +250,19 @@
   
   <div class="grid-block">
           
-    <div class="grid-links">
-      <h2 class="main-text-1">фото-отчет</h2>
-        <h1 class="main-text-2">Делимся впечатлениями</h1>
-  </div>
+    <section class="grid-links">
+      <h2 class="grid_title">фото-отчет</h2>
+        <h1 class="grid_text">Делимся впечатлениями</h1>
+  </section>
 
 <div class="grid-img">
  
-      <img src="image/3.13.png" alt="Здесь картинка гор"class="photo1">
-      <img src="image/3.14.png" alt="Здесь картинка гор"class="photo2">
-      <img src="image/3.15.png" alt="Здесь картинка гор"class="photo3">
-      <img src="image/3.16.png" alt="Здесь картинка гор"class="photo4">
-      <img src="image/3.17.png" alt="Здесь картинка гор"class="photo5">
-      <img src="image/3.18.png" alt="Здесь картинка гор"class="photo6">
+      <img src="image/3.13.png" alt="Картинка гор Rumtibet"class="grid-photo__1">
+      <img src="image/3.14.png" alt="Картинка гор Rumtibet"class="grid-photo__2">
+      <img src="image/3.15.png" alt="Картинка гор Rumtibet"class="grid-photo__3">
+      <img src="image/3.16.png" alt="Картинка гор Rumtibet"class="grid-photo__4">
+      <img src="image/3.17.png" alt="Картинка гор Rumtibet"class="grid-photo__5">
+      <img src="image/3.18.png" alt="Картинка гор Rumtibet"class="grid-photo__6">
    
   </div>
   <button class="grid-button">Наш pinterest</button> 
@@ -278,16 +270,16 @@
 
 
 <div class="form-block">
-  <div class="form-links"> 
-    <h2 class="main-text-1">актуально</h2>
-        <h1 class="main-text-4">Получайте полезные рассылки о путешествиях</h1>
-</div>
+  <section class="form-links"> 
+    <h2 class="form__title">актуально</h2>
+        <h1 class="form__text--secondary">Получайте полезные рассылки о путешествиях</h1>
+</section>
  <div class="form-container">
      <p class="form-text-two">Введите e-mail адрес</p>
-<div class="form-main">
+     <form action="#" method="get" class="form-main">
 <input type="email" name="email" class="form-input" placeholder="name@domain.com" required>
 <button type="submit" class="form-button">Подписаться на новости</button>
-</div>
+     </form>
 <p class="email-text">подписываясь на новости, вы автоматически соглашаетесь с условиями обработки персональных данных и правилами рекламных рассылок</p>
 </div>
 </div>

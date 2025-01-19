@@ -198,13 +198,6 @@ a {
   min-width: 350px;
 }
 
-/* .main-img-two{
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 24px;
-} */
-
 .main-video {
   position: absolute;
   background-size: cover;
@@ -236,6 +229,7 @@ a {
 .main__title,
 .travel__title,
 .form__title,
+.form__title--mobile,
 .grid_title,
 .price_title {
   color: #f2be22;
@@ -260,18 +254,24 @@ a {
   line-height: 27px;
 }
 .content__text--secondary,
-.form__text--secondary {
+.form__text--secondary,
+.form__text--secondary--mobile {
   color: #18121e;
-  font-size: 18px;
   font-weight: 700;
-  line-height: 20px;
   letter-spacing: 1.2%;
+}
+.content__text--secondary {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.form__text--secondary {
+  font-size: 26px;
 }
 
 button {
   color: var(--primary-color);
   background-color: #1a3e3e;
-  /* max-width: 200px; */
   max-height: 52px;
   padding: 10px;
   border-radius: 5px;
@@ -322,10 +322,8 @@ button {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  padding-right: 0%;
   font-family: "Nunito Sans", sans-serif;
   list-style: none;
-  gap: 10px;
   min-width: 580px;
   min-height: 591px;
 }
@@ -394,7 +392,6 @@ button {
 
 .price-images-wrapper {
   display: flex;
-  justify-content: center;
   border-radius: 32px;
 }
 
@@ -427,8 +424,8 @@ button {
   margin: 20px auto;
 }
 .img10 {
-  max-width: 17.11px;
-  max-height: 16.36px;
+  min-width: 17.11px;
+  min-height: 16.36px;
 }
 .bg-text2 {
   display: flex;
@@ -479,16 +476,8 @@ button {
   gap: 24px;
   display: flex;
   justify-content: center;
-  /* align-items: center; */
   margin-top: 10px;
 }
-
-/* .img11, .img12, .img13, .img14{
-        padding: 16px;
-        border-radius: 6px;
-        max-width: 230px;
-        max-height: 280px;
-    } */
 .img11,
 .img12,
 .img13,
@@ -505,7 +494,6 @@ button {
   min-height: 312px;
   display: flex;
   justify-content: center;
-  /* align-items: center; */
   gap: 30px;
   background-color: var(--primary-color);
 }
@@ -534,7 +522,6 @@ button {
 .travel-date {
   display: flex;
   justify-content: space-around;
-  /* gap: 80px; */
 }
 
 .form-button,
@@ -576,7 +563,7 @@ button {
 .grid-img {
   display: grid;
   min-width: 1180px;
-  min-height: 520px;
+  max-height: 520px;
   padding: 16px;
   box-sizing: border-box;
   grid-column-gap: 20px;
@@ -610,6 +597,10 @@ button {
 }
 
 /* 7 блок */
+.form__title--mobile,
+.form__text--secondary--mobile {
+  display: none;
+}
 
 .form-block {
   display: flex;
@@ -619,16 +610,12 @@ button {
   max-height: 196px;
   background-color: #fdfdfd;
   border-radius: 6px;
-  /* margin: 20px 250px; */
-  /* margin-bottom: 50px; */
+  margin: 20px 250px;
   position: absolute;
-  /* border:2px solid black ; */
   gap: 20px;
-  /* top: auto; */
-  /* left: 10%;
-        top: 662%; */
+  top: 565%;
   background-size: cover;
-  padding: 20px;
+  padding: 40px;
 }
 .form-container {
   display: flex;
@@ -650,12 +637,6 @@ button {
   align-items: flex-start;
   padding-left: 30px;
 }
-/* .main-text-4{
-        color: #18121E;
-        font-size: 26px;
-        font-weight: 800;
-        line-height: 31.2px;
-    } */
 .form-text-two {
   color: #171717;
   font-size: 16px;
@@ -677,4 +658,54 @@ button {
   max-width: 280px;
   max-height: 44px;
   background-color: #f3f5f4;
+}
+
+/* 8 блок */
+
+.footeer {
+  background-color: #1a3e3e;
+  max-width: 100%;
+  max-height: 587px;
+}
+.footeer-block {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 150px 150px;
+  gap: 30px;
+}
+.footeer-title {
+  color: var(--primary-color);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.footeer-description {
+  color: var(--primary-color);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.footeer-wrapper {
+  min-width: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.footeer-block__secondary {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 16px;
+}
+.footeer-text {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  align-items: center;
 }

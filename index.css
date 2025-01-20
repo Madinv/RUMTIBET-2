@@ -380,6 +380,8 @@ button {
 }
 .price-description {
   font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
 }
 
 .price-wrapper {
@@ -403,15 +405,11 @@ button {
 }
 
 .bg-text {
-  background-color: rgba(220, 220, 220, 0.5);
-  color: white;
-  transform: translate(0%, -104.5%);
-  min-height: 90px;
   padding: 0px 15px;
   display: flex;
   gap: 30px;
-  border-radius: 0px 0px 30px 30px;
-  font-family: "Nunito Sans", sans-serif;
+  align-items: center;
+  justify-content: center;
 }
 
 .price {
@@ -420,7 +418,7 @@ button {
   line-height: 24px;
   background-color: rgba(220, 220, 220, 0.5);
   border-radius: 4px;
-  padding: 10px 20px;
+  padding: 8px;
   margin: 20px auto;
 }
 .img10 {
@@ -446,6 +444,54 @@ button {
 .price-button {
   margin-bottom: 50px;
 }
+.bg-images {
+  position: relative;
+  /* z-index: 1; */
+}
+.bg-images-anim {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+  background-color: rgba(220, 220, 220, 0.5);
+  width: 380px;
+  /* max-height: 70px; */
+  color: white;
+  padding: 0px 15px;
+  border-radius: 0px 0px 30px 30px;
+  font-family: "Nunito Sans", sans-serif;
+  overflow: hidden;
+  transform: translateY(-100%);
+  transition: 1s;
+  /* transform: translate(0%, -25%); */
+  /* animation: anim 5s linear infinite; */
+  /* z-index: 1; */
+}
+.bg-images-anim::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  content: "";
+}
+.bg-images-anim :hover ::before {
+  /* transition: all 0.6s ease; */
+  /* transform: translate(0%, -500%); */
+  /* transform: translate(-0%, -0%); */
+  transform: translateY(0% -150%);
+  opacity: 1;
+  /* transform: translate(0%, -150%); */
+  /* background-image: url(image/3.5.png) no-repeat center center / cover; */
+  /* height: 500px; */
+  /* width: 100%;
+  border-radius: 30px;
+  overflow: none; */
+}
+
+/* 5 блок  */
 
 .travel-main {
   background-color: #f3f5f4;

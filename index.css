@@ -184,7 +184,6 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 1180px;
   min-height: 526px;
   color: var(--second-color);
   position: relative;
@@ -296,16 +295,16 @@ button {
   background-color: #f3f5f4;
   width: 100%;
   min-height: 771px;
-  padding: 10px 30px;
 }
 .content {
   margin: 30px 100px;
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
-  max-width: 1920px;
+  /* max-width: 1920px; */
   max-height: 771px;
   gap: 40px;
+  padding: 20px 10px;
 }
 
 .content-wrap {
@@ -395,6 +394,7 @@ button {
 .price-images-wrapper {
   display: flex;
   border-radius: 32px;
+  gap: 20px;
 }
 
 .price-images__links {
@@ -425,7 +425,7 @@ button {
   min-width: 17.11px;
   min-height: 16.36px;
 }
-.bg-text2 {
+/* .bg-text2 {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -434,6 +434,24 @@ button {
   background-color: rgba(220, 220, 220, 0.5);
   border-radius: 4px;
   padding: 4px 8px;
+  position: absolute;
+  right: 100%;
+} */
+.bg-text2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* transform: translate(-100%, 150%); */
+  max-height: 32px;
+  background-color: rgba(220, 220, 220, 0.5);
+  border-radius: 4px;
+  padding: 4px 8px;
+  position: absolute;
+  right: 0%;
+  bottom: 80%;
+}
+.bg-images {
+  position: relative;
 }
 
 .price-secondary {
@@ -711,7 +729,7 @@ button {
 .footeer-block {
   display: flex;
   justify-content: space-evenly;
-  padding: 150px 150px;
+  padding: 150px 20px;
   gap: 30px;
 }
 .footeer-title {
@@ -731,11 +749,11 @@ button {
 }
 
 .footeer-wrapper {
-  min-width: 480px;
+  max-width: 480px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: space-between;
+  /* align-items: flex-start; */
 }
 
 .footeer-block__secondary {
